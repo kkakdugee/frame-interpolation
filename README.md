@@ -11,21 +11,15 @@ pip install -r requirements.txt
 ```
 
 ## Preview
-<table>
-  <tr>
-    <td>Original Video (24 fps)</td>
-    <td>1st Passthrough (48 fps)</td>
-    <td>2nd Passthrough (96 fps)</td>
-  </tr>
-  <tr>
-    <td><a href="https://github-production-user-asset-6210df.s3.amazonaws.com/75061722/283003319-21959c55-6a8a-4950-af87-57f0bdaf8b7d.mp4">
-    </a></td>
-    <td><a href="https://github-production-user-asset-6210df.s3.amazonaws.com/75061722/283004949-bcbe6477-911f-41ac-9c9e-72d92589e40e.mp4">
-    </a></td>
-    <td><a href="https://github-production-user-asset-6210df.s3.amazonaws.com/75061722/283005177-ce09450b-8a0f-4d44-951e-5179d16e8549.mp4">
-    </a></td>
-  </tr>
-</table>
+### Original Video (24 FPS)
+https://github.com/kkakdugee/frame-interpolation/assets/75061722/62c335b8-faa7-4885-99cd-2c3a69d2e8e3
+
+### 1st Passthrough (48 FPS)
+https://github.com/kkakdugee/frame-interpolation/assets/75061722/25e554ca-556e-413b-bc93-21385eb26dd0
+
+
+
+
 
 ## Usage
-Execute `runner.py` to begin. Select between preprocessing data or generating an interpolated video. To train the model, preprocess your data first, followed by running `model_training.py`.
+Execute `runner.py` to begin. Select between preprocessing data or generating an interpolated video. To train the model, preprocess your data first, followed by running `model_training.py`. To generate an interpolated video, make sure to have the input video in the `videos` folder and follow instructions.
