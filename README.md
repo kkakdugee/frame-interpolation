@@ -11,20 +11,15 @@ pip install -r requirements.txt
 ```
 
 ## Preview
-<table>
-  <tr>
-    <td>Original Video (24 fps)</td>
-    <td>1st Passthrough (48 fps)</td>
-    <td>2nd Passthrough (96 fps)</td>
-  </tr>
-  <tr>
-    <td><a href="github.com/kkakdugee/frame-interpolation/videos/halo.mp4">
-    </a></td>
-    <td><a href="github.com/kkakdugee/frame-interpolation/output/halo_48fps.mp4">
-    </a></td>
-    <td><a href="github.com/kkakdugee/frame-interpolation/output/halo_96fps.mp4>
-  </tr>
-</table>
+### Original Video (24 FPS)
+https://github.com/kkakdugee/frame-interpolation/assets/75061722/62c335b8-faa7-4885-99cd-2c3a69d2e8e3
+
+### 1st Passthrough (48 FPS)
+https://github.com/kkakdugee/frame-interpolation/assets/75061722/25e554ca-556e-413b-bc93-21385eb26dd0
+
+
+
+
 
 ## Usage
 Execute `runner.py` to begin. Select between preprocessing data or generating an interpolated video. To train the model, preprocess your data first, followed by running `model_training.py`.
