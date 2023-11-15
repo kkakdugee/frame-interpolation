@@ -22,4 +22,4 @@ https://github.com/kkakdugee/frame-interpolation/assets/75061722/25e554ca-556e-4
 
 
 ## Usage
-Execute `runner.py` to begin. Select between preprocessing data or generating an interpolated video. To train the model, preprocess your data first, followed by running `model_training.py`.
+Execute `runner.py` to begin. Select between preprocessing data or generating an interpolated video. To train the model, preprocess your data first, followed by running `model_training.py`. To generate an interpolated video, make sure to have the input video in the `videos` folder and follow instructions.
