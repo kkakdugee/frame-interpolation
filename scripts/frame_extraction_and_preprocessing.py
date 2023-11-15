@@ -29,14 +29,16 @@ def gather_frames(video_name, video_folder):
     # Loop through each frame in the video
     while success:
         frame_count += 1
-        img_path = os.path.join(raw_video_dir, f"Frame_{frame_count}.jpg")
+        img_path = os.path.join(raw_video_dir, f"Frame_{frame_count}.png")
         # Save the current frame as an image file
         cv2.imwrite(img_path, image)
         success, image = video.read()  # Read the next frame
 
+    video_fps = round(video.get(cv2.CAP_PROP_FPS))
+    
     video.release()
 
-    return round(video.get(cv2.CAP_PROP_FPS))
+    return video_fps
 
 def preprocess_frames(target_size=(1280, 720)):
     """

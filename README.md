@@ -18,11 +18,12 @@ pip install -r requirements.txt
     <td>2nd Passthrough (96 fps)</td>
   </tr>
   <tr>
-    <td><a href="github.com/kkakdugee/frame-interpolation/videos/halo.mp4">
+    <td><a href="https://github-production-user-asset-6210df.s3.amazonaws.com/75061722/283003319-21959c55-6a8a-4950-af87-57f0bdaf8b7d.mp4">
     </a></td>
-    <td><a href="github.com/kkakdugee/frame-interpolation/output/halo_48fps.mp4">
+    <td><a href="https://github-production-user-asset-6210df.s3.amazonaws.com/75061722/283004949-bcbe6477-911f-41ac-9c9e-72d92589e40e.mp4">
     </a></td>
-    <td><a href="github.com/kkakdugee/frame-interpolation/output/halo_96fps.mp4>
+    <td><a href="https://github-production-user-asset-6210df.s3.amazonaws.com/75061722/283005177-ce09450b-8a0f-4d44-951e-5179d16e8549.mp4">
+    </a></td>
   </tr>
 </table>
 

@@ -34,7 +34,7 @@ def interpolate_and_save(model, device, frame_a, frame_b, temp_dir, i, m):
     output_frame_bgr = cv2.cvtColor(output_frame, cv2.COLOR_RGB2BGR)  # Convert back to BGR for saving
     
     # Save the frame to the temporary directory
-    interpolated_frame_path = os.path.join(temp_dir, f'interpolated_frame_{m + 1}_{i}.jpg')
+    interpolated_frame_path = os.path.join(temp_dir, f'interpolated_frame_{m + 1}_{i}.png')
     cv2.imwrite(interpolated_frame_path, output_frame_bgr)
     return interpolated_frame_path
 
@@ -45,7 +45,7 @@ def main(multiplier, video_name, video_folder, video_fps):
     os.makedirs(temp_dir, exist_ok=True)  # Create the temporary directory if it doesn't exist
 
     # Sort the frame files to ensure they are in the correct order
-    frame_files = sorted([os.path.join(frames_dir, f) for f in os.listdir(frames_dir) if f.endswith('.jpg')],
+    frame_files = sorted([os.path.join(frames_dir, f) for f in os.listdir(frames_dir) if f.endswith('.png')],
                          key=numerical_sort_key)
 
     # Set up the device for PyTorch and load the trained model
@@ -84,7 +84,7 @@ def main(multiplier, video_name, video_folder, video_fps):
         interpolated_frame_files = new_interpolated_frames
 
     # Set up the video writer to save the output video
-    video = cv2.VideoWriter(video_path, cv2.VideoWriter_fourcc(*'mp4v'), target_fps, (width, height))
+    video = cv2.VideoWriter(video_path, cv2.VideoWriter_fourcc(*'avc1'), target_fps, (width, height))
 
     # Write each frame to the output video file
     for frame_path in interpolated_frame_files:
