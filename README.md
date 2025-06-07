@@ -11,8 +11,9 @@ A Streamlit-based app that lets you compare **naive pixel-averaging** vs. a **de
 
 | Original | Deep U-Net Interpolation |
 |:--------:|:------------------------:|
-| <video controls loop muted width="320"><source src="./media/preinterpolate1.mp4" type="video/mp4">Your browser doesn’t support the video tag.</video> | <video controls loop muted width="320"><source src="./media/interpolated1.mp4" type="video/mp4">Your browser doesn’t support the video tag.</video> |
-| <video controls loop muted width="320"><source src="./media/preinterpolate2.mp4" type="video/mp4">Your browser doesn’t support the video tag.</video> | <video controls loop muted width="320"><source src="./media/interpolated2.mp4" type="video/mp4">Your browser doesn’t support the video tag.</video> |
+| https://github.com/user-attachments/assets/20e26b67-ca0a-43e8-bc89-e6f30030420b | https://github.com/user-attachments/assets/ae518252-e343-495e-913d-7c4c0f6cdac5 |
+| https://github.com/user-attachments/assets/bcd3b165-8b0c-4353-8570-11dd66fd32ea |
+
 
 
 ---
