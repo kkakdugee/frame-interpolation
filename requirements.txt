@@ -1,5 +1,5 @@
 torch
 torchvision
 streamlit
-opencv-python
+opencv-python-headless
 moviepy
