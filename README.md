@@ -24,7 +24,7 @@ A Streamlit-based app that lets you compare **naive pixel-averaging** vs. a **de
   - VGG16-based perceptual (feature) loss  
 - **Training**:  
   - Vimeo90K triplets, 512×512 crops  
-  - Adam optimizer, 50 epochs, Cosine LR schedule  
+  - Adam optimizer, 5 epochs, Cosine LR schedule  
 
 ---
 
