@@ -1,5 +1,5 @@
-numpy
 torch
 torchvision
+streamlit
 opencv-python
-scikit-learn
+moviepy
