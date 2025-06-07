@@ -8,14 +8,17 @@ from model import UNet
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 model = UNet().to(device)
-checkpoint_path = './unet_trained.pth'
+checkpoint_path = './unet_interp.pth'
 if (os.path.exists(checkpoint_path)):
-    checkpoint = torch.load('./unet_trained.pth', map_location=device)
+    print("hi")
+    checkpoint = torch.load('./unet_interp.pth', map_location=device)
     model.load_state_dict(checkpoint)
     model.eval()
+else:
+    print("bye")
 
 _transform = transforms.Compose([
-    transforms.Resize((256, 256)),
+    transforms.Resize((512, 512)),
     transforms.ToTensor(),
 ])
 
@@ -40,10 +43,11 @@ def deep_interpolate(frame_a: Image.Image, frame_b: Image.Image) -> Image.Image:
 
     # Inference
     with torch.no_grad():
-        pred = model(inp)            # shape [1,3,H,W]
-        pred = pred.squeeze(0)       # [3,H,W]
+        pred = model(inp).clamp(0, 1) # [1,3,512,512]
 
     # Convert tensor to PIL Image
-    pred = pred.cpu().clamp(0, 1)
-    arr = (pred.permute(1, 2, 0).numpy() * 255).astype(np.uint8)
-    return Image.fromarray(arr)
+    pred = pred.squeeze(0).cpu()
+    arr  = (pred.permute(1,2,0).numpy() * 255).astype(np.uint8)
+    out512 = Image.fromarray(arr)
+
+    return out512.resize(frame_a.size, resample=Image.BILINEAR)
