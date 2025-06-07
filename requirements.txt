@@ -3,4 +3,3 @@ torchvision
 streamlit
 opencv-python-headless
 moviepy
--e .

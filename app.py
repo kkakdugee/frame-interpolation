@@ -1,4 +1,6 @@
-import os
+import os, sys
+sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
+
 import streamlit as st
 from src.data.video_utils import read_uploaded_video
 from src.interpolation_utils import naive_interpolate, deep_interpolate
