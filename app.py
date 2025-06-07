@@ -2,7 +2,6 @@ import os
 import streamlit as st
 from src.data.video_utils import read_uploaded_video
 from src.interpolation_utils import naive_interpolate, deep_interpolate
-import cv2
 import numpy as np
 import base64
 from moviepy import VideoFileClip, ImageSequenceClip

@@ -3,16 +3,17 @@
 A Streamlit-based app that lets you compare **naive pixel-averaging** vs. a **deep U-Net** model (with VGG16 perceptual loss) for video frame interpolation. Upload your video, crank up the frame rate, and see the results side-by-side!
 
 ![App Preview](./media/preview.png)  
-### Try it yourself here: 
+### Try it yourself here: https://frame-interpolate.streamlit.app/
 
 ---
 
 ## ⚡ Results
 
-| Original |  Deep U-Net Interpolation |
-|:--------:|:-------------------------:|
-| ![Original](./media/preinterpolate1.mp4) | ![Deep](./media/interpolated1.mp4.mp4) |
-| ![Original](./media/preinterpolate2.mp4) | ![Deep](./media/interpolated2.mp4) |
+| Original | Deep U-Net Interpolation |
+|:--------:|:------------------------:|
+| <video controls loop muted width="320"><source src="./media/preinterpolate1.mp4" type="video/mp4">Your browser doesn’t support the video tag.</video> | <video controls loop muted width="320"><source src="./media/interpolated1.mp4" type="video/mp4">Your browser doesn’t support the video tag.</video> |
+| <video controls loop muted width="320"><source src="./media/preinterpolate2.mp4" type="video/mp4">Your browser doesn’t support the video tag.</video> | <video controls loop muted width="320"><source src="./media/interpolated2.mp4" type="video/mp4">Your browser doesn’t support the video tag.</video> |
+
 
 ---
 
