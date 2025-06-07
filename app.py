@@ -1,5 +1,7 @@
 import os, sys
-sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
+HERE = os.path.dirname(__file__)  
+SRC  = os.path.abspath(os.path.join(HERE, "src"))
+sys.path.insert(0, SRC)
 
 import streamlit as st
 from src.data.video_utils import read_uploaded_video
