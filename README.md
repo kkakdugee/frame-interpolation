@@ -8,7 +8,7 @@ A Streamlit-based app that lets you compare **naive pixel-averaging** vs. a **de
 ---
 
 ## ⚡ Results
-
+https://github.com/user-attachments/assets/20e26b67-ca0a-43e8-bc89-e6f30030420b
 | Original | Deep U-Net Interpolation |
 |:--------:|:------------------------:|
 | https://github.com/user-attachments/assets/20e26b67-ca0a-43e8-bc89-e6f30030420b | https://github.com/user-attachments/assets/ae518252-e343-495e-913d-7c4c0f6cdac5 |
