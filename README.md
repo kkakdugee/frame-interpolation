@@ -8,17 +8,13 @@ A Streamlit-based app that lets you compare **naive pixel-averaging** vs. a **de
 ---
 
 ## ⚡ Results
-### Example 1
-**Original** | **Deep U-Net Interpolation**
-:---: | :---:
+### Example 1 
 
 https://github.com/user-attachments/assets/20e26b67-ca0a-43e8-bc89-e6f30030420b
 
 https://github.com/user-attachments/assets/ae518252-e343-495e-913d-7c4c0f6cdac5
 
 ### Example 2
-**Original** | **Deep U-Net Interpolation**
-:---: | :---:
 
 https://github.com/user-attachments/assets/bcd3b165-8b0c-4353-8570-11dd66fd32ea
 
